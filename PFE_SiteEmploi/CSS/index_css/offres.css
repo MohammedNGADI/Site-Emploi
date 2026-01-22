@@ -1,0 +1,185 @@
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+
+*{
+    font-family: 'Readex Pro', sans-serif;
+}
+.conteneur {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.photos {
+    flex: 1;
+}
+.texte {
+    flex: 1;
+    margin-left: 20px; /* Marge à gauche pour séparer les deux zones */
+}
+body {
+background-color: #f8f9fa;
+color: #333;
+}
+
+.texte {
+padding: 20px;
+}
+
+.texte h1 {
+font-size: 3rem;
+color: black;
+margin-bottom: 20px;
+}
+
+.texte h2 {
+font-size: 2rem;
+color: black;
+margin-bottom: 20px;
+}
+
+.texte p {
+font-size: 1.2rem;
+margin-bottom: 15px;
+}
+
+.photos img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+margin-bottom: 20px;
+transition: transform 0.3s ease-in-out;
+}
+.photos img:hover {
+transform: scale(1.05);
+}
+header {
+background-color: #1aa3d4;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 10000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 90px;
+padding: 0 5%;
+
+}
+header  .logo2 a {
+font-size: 25px;
+color: #29d9d5;
+
+}
+header  .logo2 a span {
+color: #fff;
+}
+.menu2 {
+display: flex;
+align-items: center;
+}
+.menu2 li  {
+margin: 0 15px;
+list-style-type: none;
+}
+.menu2 li a {
+color: #fff;
+font-size: 14px;
+}
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 50px;
+padding: 0 10%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: #1aa3d4;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+z-index: 10;
+}
+.menu2 {
+display: flex;
+}
+.logo2 {
+color:  #273e60;
+;
+font-weight: 700;
+font-size: 25px;
+}
+.logo2 span {
+color: black;
+}
+.menu2 li {
+margin: 0 15px;
+list-style: none;
+}
+.menu2 li a {
+font-size: 14px;
+text-decoration: 0;
+color: white;
+position: relative;
+}
+.menu2 li a::before {
+position: absolute;
+top: -5px;
+left: 0;
+content: "";
+width: 0;
+height: 2px;
+border-radius: 6px;
+background-color:  #273e60;
+transition: 0.5s;
+}
+.menu2 li a:hover::before {
+width: 100%;
+}
+.menu2 li a::after {
+position: absolute;
+bottom: -5px;
+right: 0;
+content: "";
+width: 0;
+height: 2px;
+border-radius: 6px;
+background-color: #273e60;
+transition: 0.5s;
+}
+.menu2 li a:hover::after {
+width: 100%;
+}
+.menu2 li a:hover {
+color: #0000005d;
+}
+
+
+
+#detail {
+    background-color: #ededed;
+    border: black solid;
+    height: 50px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+#div1 {
+    margin-left:  5px;
+    
+}
+#div3 {
+    margin-left:  5px;
+    margin-right: 5px;
+}
+
+
+
+
+

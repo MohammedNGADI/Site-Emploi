@@ -1,0 +1,179 @@
+@import './enTeteCSS.css';
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+
+*{
+    font-family: 'Readex Pro', sans-serif;
+    
+}
+
+
+body{
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.milieu{
+    margin-top: 100px;
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.Entreprise,.Annance{
+    background-color: #fff;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 2px 2px 2px  rgba(0, 0, 0,0.1);
+}
+.entrepriseNom,.AnnanceDetail{
+    font-size: 34px;
+    padding: 15px;
+    border-bottom: solid 3px rgba(0, 0, 0,0.1);
+}
+.logoEntreprise{
+    float: right;
+    cursor: pointer;
+}
+.InfosAnnance,.InfosEntreprise{
+    padding-left: 20px;
+}
+.Poste{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.informationsA,.InfosEntreprise{
+    padding-left: 20px;
+    width: 90%;
+    font-size: 20px;
+}
+.competences,.typeContrat,.ville,.NiveauExperience,.NiveauEtude,.langues{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+footer{
+    position: relative;
+    margin-top: 300px;
+    width: 100%;
+
+}
+
+/* Styles pour le candidat */
+
+.Postulation{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+.Postulation .btnPostulation{
+    background-color: #4097bd;
+    color: black;
+    height: 100px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+
+.Postulation .btnPostulation:hover{
+    background-color: #7cacc0;
+}
+
+.ConfirmationEtMessage{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(7px);
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+.ConfirmationEtMessage .ConfirmerPostulation{
+    background-color: #ffffffdc;
+    height: 300px;
+    width: 40%;
+    border-radius: 30px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    padding-top: 90px;
+    
+}
+.ConfirmationEtMessage .ConfirmerPostulation p{
+    margin-left: 100px;
+
+}
+
+.ConfirmationEtMessage .ConfirmerPostulation button{
+    margin-top: 100px;
+    height: 60px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.ConfirmationEtMessage .ConfirmerPostulation .Oui{
+    margin-right: 30px;
+    background-color: #1c9d58;
+}.ConfirmationEtMessage .ConfirmerPostulation .Oui:hover{
+    background-color: #2fd07a;
+}
+
+.ConfirmationEtMessage .ConfirmerPostulation .Non{
+    margin-right: 40px;
+    background-color: #df3030;
+}.ConfirmationEtMessage .ConfirmerPostulation .Non:hover{
+    background-color: #e96565;
+}
+
+.MessagePostulation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-size: 16px;
+    transition: opacity 0.5s ease; /* Transition sur l'opacité pendant 0.5 seconde */
+    opacity: 0; /* Opacité initiale */
+}
+
+.MessagePostulation::after {
+    content: "\2714"; /* Ajoutez ici un symbole ou une icône de confirmation */
+    font-size: 24px;
+    color: #fff;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.MessagePostulation.hidden {
+    opacity: 1; /* Opacité lorsque caché */
+}

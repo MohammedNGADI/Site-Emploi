@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Readex Pro', sans-serif;
+
+}
+header{
+    position: absolute;
+    top: 0;
+}
+.conteneur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.conteneur h1{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    padding-left: 10%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+
+}
+
+.offres{
+    width: 90%;
+    min-height: 800px;
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logoEntreprise{
+    width: 250px;
+}
+
+.offresRecruteur{
+    width: 100%;
+    margin-top: -40px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.offrecard{
+    background-color: white;
+    border:  solid rgb(213, 213, 213) 3px;
+    min-height: 200px;
+    height: max-content;
+    display: flex;
+    transition: all 0.3s ease;
+    width: 100%;
+    cursor: pointer;
+
+}
+.offrecard:hover{
+    background-color: #448cb54c;
+}
+
+.RecruteurLogo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offredetail{
+    font-size: 25px;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 80%;
+    padding-top: 10px;
+}
+
+.entL{
+    border-radius: 20px;
+    background-color: white;
+    z-index: 200;
+    height: 150px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rgb(213, 213, 213) solid 3px;
+}
+
+.description,.region{
+    font-size: 15px;
+}
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Spécifie le nombre de lignes à afficher */
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+}
+
+
+.NomEntreprise{
+    margin-left: 20px;
+    font-size: 20px;
+}

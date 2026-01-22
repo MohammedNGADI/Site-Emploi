@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+
+*{
+    font-family: 'Readex Pro', sans-serif;
+}
+/*home*/
+.about {
+    margin-top: 50px;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    position: relative;
+}
+.about .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .right {
+    width: 45%;
+}
+.about .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    padding: 20px 5%;
+}
+.about .image {
+    width: 55%;
+    height: 400px;
+}
+.about .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about .content {
+    width: 40%;
+}
+.about .content h1 {
+    margin: 16px 0;
+}
+.about .content h2 {
+    margin: 15px 0;
+    color: #333;
+}

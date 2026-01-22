@@ -1,0 +1,47 @@
+
+.liste {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    width: max-content;
+    display: flex;
+    height: max-content;
+    z-index: 3000;
+}
+.option {
+    width: max-content;
+    font-size: 10px;
+    display: none;
+    white-space: nowrap;
+    border-radius: 20px;
+    padding: 8px;
+    color: white;
+    background: black;
+    transition: display 0.3s ease; /* Ajout de la transition */
+}
+.icon:hover + .option {
+    display: block;
+}
+.ligne{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+}
+.icon{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50%;
+}
+.icon:hover{
+    background-color: rgb(198, 229, 254);
+}
+.icon svg{
+    width: 25px;
+    height: 25px;
+    
+}

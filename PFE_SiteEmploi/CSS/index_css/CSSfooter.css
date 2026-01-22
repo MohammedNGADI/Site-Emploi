@@ -1,0 +1,171 @@
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+
+*{
+    font-family: 'Readex Pro', sans-serif;
+}
+/**
+ * Footer
+ */
+
+ .main-footer {
+    background: rgb(88, 114, 245);
+    padding-top: 60px;
+    padding-bottom: 50px;
+    color: #FFF;
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main-footer a {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.main-footer a:hover {
+    color:  #070808;
+}
+
+h5.footer-title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 0 0 25px;
+    color: #FFF;
+    position: relative;
+}
+
+.footer-about-us {
+    margin-right: 40px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-about-us a {
+    border: 2px solid #070808;
+    color:  #FFF;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 4px 12px;
+    
+    border-radius: 3px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.footer-about-us a:hover {
+    border-color: #2991A2;
+}
+
+ul.footer-menu li {
+    width: 50%;
+    float: left;
+    margin-bottom: 12px;
+}
+
+.footer-newsletter {
+    margin-top: 23px
+}
+
+.footer-newsletter .form-group {
+    position: relative;
+}
+
+.footer-newsletter .form-control {
+    background: none;
+    height: 44px;
+    border-radius: 22px;
+    border: 2px solid #FFF;
+    padding-left: 20px;
+    padding-right: 100px;
+    color: #FFF;
+}
+
+.footer-newsletter .form-control:focus {
+    border-color: #FFF;
+}
+
+.footer-newsletter .btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 22px;
+    line-height: 16px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+}
+
+.bottom-footer {
+    background: rgb(19 52 221);
+    color: #FFF;
+    line-height: 22px;
+    font-size: 13px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.bottom-footer a {
+    color: #FFF;
+}
+
+.bottom-footer a:hover {
+    color: #070808;
+}
+
+ul.bottom-footer-menu {
+    text-align: center;
+}
+
+ul.bottom-footer-menu li {
+    
+    position: relative;
+    font-size: 12px;
+}
+
+ul.bottom-footer-menu li + li {
+    margin-left: 30px;
+}
+
+ul.bottom-footer-menu li:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    width: 4px;
+    height: 4px;
+    background:  #070808;
+    border-radius: 50%;
+}
+
+
+
+ul.bottom-footer-menu.for-social {
+    float: right;
+}
+
+ul.bottom-footer-menu.for-social li + li {
+    margin-left: 20px;
+}
+
+ul.bottom-footer-menu.for-social li a {
+    font-size: 16px;
+}
+
+ul.bottom-footer-menu.for-social li:after {
+    display: none;
+}
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+    ul.bottom-footer-menu {
+        text-align: left;
+        margin: 10px 0;
+    }
+    ul.bottom-footer-menu.for-social {
+        float: left;
+        margin: 0;
+    }
+}

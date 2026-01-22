@@ -1,0 +1,468 @@
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+                
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
+                                                
+}
+
+    
+section {
+    margin-top: 50px;
+}
+body {
+    position: relative;
+    
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.menu {
+    display: flex;
+    
+}
+
+
+.Nom_Entreprise {
+    width: 75px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.Nom_Entreprise span {
+    color: black;
+}
+.menu li {
+    margin: 0 15px;
+    margin-top: 0;
+    list-style: none;
+ }
+ .menu li a {
+     font-size: 20px;
+     font-weight: 700;
+     text-decoration: 0;
+     color: black;
+     position: relative;
+ }
+
+.menu li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color:  #273e60;
+    transition: 0.5s;
+}
+.menu li a:hover::before {
+    width: 100%;
+}
+.menu li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #273e60;
+    transition: 0.5s;
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.menu li a:hover {
+    color: #000;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.05);
+    padding: 50px 10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.toggle_menu {
+    display: none;
+}
+
+
+.milieu{
+    position: absolute;
+    top: 70px;   
+    right : 15%; 
+    width: 70%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.milieu .mlAdd{
+    display: none;
+}
+
+.milieu .mlCandidat{
+    display: none;
+}
+.milieu .mloffres{
+    display: none;
+}
+
+
+.droit{
+    background-color: #448cb5;
+    width: 15%;
+    height: 100vh;
+    position: absolute;
+    top: 70px;   
+    right : 0; 
+}
+
+.gauche{
+    background-color: #448cb5;
+    width: 15%;
+    height: 100vh;
+    position: absolute;
+    top: 70px;    
+    left: 0;
+}
+
+.gauche .Ajouter{
+    margin-top: 40px;
+}
+
+.gauche p{
+    font-size: 20px;
+    padding-left: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #448cb5;
+}
+
+
+
+
+.milieu .mlAdd {
+    margin-top: 40px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 25px;
+    background-color: #98c6e161;
+    display: none;
+}
+
+.milieu .mlAdd .AddForm{
+    margin-top: -100px;
+   
+}
+
+.milieu .mlAdd .AddForm label{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.milieu .mlAdd .AddForm .txtar{
+    font-size: 30px;
+    margin-top: 0;
+    position: relative;
+    top: -55px;
+}
+
+.milieu .mlAdd .AddForm input{
+    font-size: 30px;
+    margin-top: 20px;
+    height: 60px;
+    margin-left: 20px;
+    width: 550px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.milieu .mlAdd .AddForm textarea{
+    font-size: 30px;
+    margin-top: 20px;
+    height: 200px;
+    width: 550px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.milieu .mlAdd .AddForm .btnvld{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    right: 10%;
+    border-radius: 10px;
+    background-color: rgb(2, 184, 36);
+    cursor: pointer;
+    color: #eee;
+    border:  none;
+}
+.milieu .mlAdd .AddForm .btnAnnul{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    right: 27%;
+    border-radius: 10px;
+    background-color: rgb(220, 18, 14);
+    cursor: pointer;
+    color: #eee;
+    border:  none;
+}
+.milieu .mlAdd .AddForm .btnvld:hover{
+    background-color: rgb(1, 138, 1);
+}
+.milieu .mlAdd .AddForm .btnAnnul:hover{
+    background-color: rgb(167, 10, 8);
+}
+
+
+
+.milieu .mloffres {
+    margin-top: 40px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 25px;
+    display: none;
+}
+
+.milieu .mloffres .offre {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.offre .titre {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.offre .titre p {
+    font-size: 35px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offre .titre p i {
+    cursor: pointer;
+    font-size: 50px;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+}
+
+.offre .contenue {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.contenue .card{
+    height: auto;
+    background-color: #98c6e161;
+    padding:30px;
+    border-radius: 10px;
+    
+
+}
+.contenue .card .card-head{
+    display: flex;
+    justify-content: space-between;
+}
+.contenue .card .Post,.date{
+    font-size: 20px;
+    color: rgb(23, 87, 128);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.contenue .card .card-body {
+    padding-top: 10px;
+}
+
+.contenue .card .card-body p{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #e4e4e4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.contenue .card .card-body .card-text{
+    padding: 20px 20px 0 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+.offre .titre .bx-chevron-down {
+    transition: transform 0.3s ease; 
+}
+
+.offre .titre .bx-chevron-down.rotate {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+.offre .titre .bxs-edit{
+    position: absolute;
+    right : 150px ;
+    font-size: 35px;
+    color: green;
+    display: none;
+}
+.offre .titre .bxs-edit:hover{
+    color: rgb(1, 57, 1);
+}
+.offre .titre  .bxs-trash{
+    position: absolute;
+    right : 220px ;
+    font-size: 35px;
+    color: red;
+    display: none;
+}
+.offre .titre .bxs-trash:hover{
+    color: rgb(127, 2, 2);
+}
+
+.candidat{
+    width: max-content; 
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+}
+
+.candidat a {
+    text-decoration: 0;
+    color: #448cb5;
+}
+
+.candidat a:hover{
+    color: black;
+}
+.demandeOffre{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    display: none;
+
+}
+
+.milieu .mlCandidat{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+
+}
+.milieu .mlCandidat .candidatcard{
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 1000px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.photoProfil{
+    background-color: #000000;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -900px;
+}
+.donneesPersonels{
+    position: absolute;
+    margin-left: -500px;
+}
+.donneesContact{
+    position: absolute;
+    margin-right: -230px;
+}
+.lienVersProfil{
+    position: absolute;
+    margin-right: -850px;
+    display: flex;
+    align-items: end;
+    height: 150px;
+}
+.lienVersProfil a{
+    font-size: 20px;
+    text-decoration: 0;
+    color: rgb(1, 102, 211);
+    margin-bottom: 10px;
+
+}
+.lienVersProfil a:hover{
+    color: rgb(6, 57, 139);
+}
+
+
+.limite{
+    height: 100px; 
+    color: black;
+    position: absolute;
+    margin-left: -200px;
+    border: #000 solid 2px;
+}

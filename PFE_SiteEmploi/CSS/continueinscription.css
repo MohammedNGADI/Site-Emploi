@@ -1,0 +1,490 @@
+@import url('../CSS/enTeteCSS.css');
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+
+*{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+  
+  header  .logo a {
+    font-size: 25px;
+    color: #29d9d5;
+  
+  }
+  header  .logo a span {
+    color: #fff;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .menu li  {
+    margin: 0 15px;
+    list-style-type: none;
+  }
+  .menu li a {
+    color: black;
+    font-size: 14px;
+  }
+  .btn-connexion {
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+    position: absolute;
+    right: 40px; /* Déplace le bouton de 40 pixels vers la gauche */
+  }
+  
+  .btn-connexion:hover {
+    background-color: #141515;
+    color: #fff;
+  
+  }
+  
+  /*******************/
+  
+  .menu {
+    display: flex;
+  }
+  .logo {
+    color: #273e60;
+    font-weight: 25;
+    font-size: 2px;
+    margin-left: 0;
+   
+  }
+  
+  
+  
+  
+  .logo-image {
+    width: 65px;
+    height: auto;
+    padding: -30px 20px;
+    position: absolute;
+    left: 5px;
+    top: 13px; 
+  }
+  
+  
+  
+  
+  
+  
+  .menu li {
+   margin: 0 15px;
+   list-style: none;
+  }
+  .menu li a {
+    font-size: 14px;
+    text-decoration: 0;
+    color: black;
+    position: relative;
+  }
+  .menu li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color:  #273e60;
+    transition: 0.5s;   
+  }
+  .menu li a:hover::before {
+    width: 100%;
+  }
+  .menu li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: black;
+    transition: 0.5s;
+  }
+  .menu li a:hover::after {
+    width: 100%;
+  }
+  .menu li a:hover {
+    color: #0000005d;
+  }
+  
+  /*Formulaire  */
+  .barsearch{
+    display: flex;
+  
+  }
+  
+  .recherchebar{
+    background-color: rgba(255, 255, 255, 0.226) ;
+    height: 60px;
+    width: 440px;
+    border: solid #eee 2px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #eee;
+    font-size: 15px;
+  }
+  
+  .recherchebar::placeholder{
+    color:  #eee;
+  }
+  
+  .recherchebtn{
+    background-color: #1aa3d4;
+    border: solid #eee 2px;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border-radius: 10px;
+  
+  }
+  .recherchebtn i {
+    color: white;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .recherchebtn i:hover {
+    color: #1aa3d4;
+  }
+  
+  .recherchebtn:hover{
+    background-color: #ffffff;
+  
+  }
+.titre{
+    background-color: rgb(61, 115, 177);
+    position: absolute;
+    width: 100%;
+    top : 80px ;
+    display: flex;
+    align-items: end;
+    padding-bottom: 10px;
+    justify-content: center;
+    height: 150px;
+    font-size: 40px;
+    color: #fff;
+}
+
+
+.DonneesPersonelles{
+    position: absolute;
+    margin-top: 300px;
+    background-color: #fff;
+    height: 400px;
+    width: 48%;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(1, 1, 24, 0.164);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 10px;
+}
+.ContinueInscForm table label{
+    color: darkblue;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.ContinueInscForm table input,textarea,select{
+    background-color: rgba(61, 115, 177, 0.185);
+    border: none;
+    margin-left: 50px;
+    height: 50px;
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+.ContinueInscForm table .radios input{
+    height: 20px;
+    width: 20px;
+    margin-left: 50px;
+    
+}
+
+.ContinueInscForm table .radios{
+    padding-top: 10px;
+
+}
+
+.b{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -1px;
+
+}
+
+.ContinueInscForm table #Adresse{
+    margin-left: 50px;
+}
+.ContinueInscForm table select{
+    margin-left: 50px;
+}
+.ContinueInscForm table select option{
+    background-color: #eeeeee3a;
+    font-size: 20px;
+    
+}
+.Donnees{
+    margin-top: 300px;
+    background-color: #fff;
+    height: 800px;
+    width: 48%;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(1, 1, 24, 0.164);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    margin-right: 10px;
+
+}
+
+.Donnees #Adresse{
+    margin-top: 3px;
+    margin-bottom: -5px;
+}
+.CVPhotoProfil{
+    position: absolute;
+    top: 800px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(1, 1, 24, 0.164);
+    border-radius: 8px;
+    width: 48%;
+    height: 300px;
+}
+.CVPhotoProfil .PhotoP{
+    max-width: 150px;
+    max-height: 150px;
+    margin-left: 50px;
+}
+#PhotoP{
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: max-content;
+}
+
+.choisiPhoto{
+    border-radius: 8px;
+    background-color: rgb(65, 158, 234);
+    position: absolute;
+    margin-left: 250px;
+    top: 150px;
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choisiPhoto i{
+    font-size: 20px;
+}
+.PhotoPinput{
+    display: none;
+}
+.btnValider{
+    position: absolute;
+    margin-top: 1150px;
+    right: 150px;
+}
+
+
+.btnValider .valider{
+    font-size: 30px;
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(6, 180, 6);
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.btnValider .valider:hover{
+    background-color: rgb(9, 138, 9);
+    
+}
+
+footer{
+    position: absolute;
+    bottom: -900px;
+    width: 100%;
+
+}
+.classDiplom .affichediploms{
+    background-color: transparent;
+    height: max-content;
+    margin-left: -50px;
+}
+.classDiplom #addDiplomaButton p {
+    color: green;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    width: max-content;
+}
+
+#addButton,#updateButton{
+    width: max-content;
+    margin-left: 70px;
+    color: green;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.classDiplom .affichediploms  textarea{
+    margin-left: 50px;
+    background-color: #fff;
+    display: none;
+    
+}.affichediploms{
+    padding-left: 50px;
+}
+
+#competencesInput{
+    background-color: aqua;
+}
+.decriptionDiv{
+    margin-top: 800px;
+    background-color: #fff;
+    height: 300px;
+    width: 48%;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(1, 1, 24, 0.164);
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+.decriptionDiv textarea{
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.decriptionDiv label{
+    color: darkblue;
+    font-size: 20px;
+}
+
+.Logo{
+    position: absolute;
+    top: 800px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(1, 1, 24, 0.164);
+    border-radius: 8px;
+    width: 48%;
+    height: 300px;
+}
+.Logo p{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: darkblue;
+}
+
+.Logo .PhotoP{
+    width: 150px;
+    height: 150px;
+    margin-left: 200px;
+    
+}
+.Donnees2{
+    margin-top: 300px;
+    background-color: #fff;
+    height: 400px;
+    width: 48%;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(1, 1, 24, 0.164);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    z-index: 1;
+}
+.LogoLabel {
+    background-color: rgba(135, 135, 135, 0.555);
+    position: absolute;
+    left: 423px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    visibility: hidden; 
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    color: green;
+}
+
+.LogoLabel.show {
+    visibility: visible; 
+    opacity: 1; 
+}
+
+
+footer{
+  margin-top: 300px;
+  position: relative;
+}
+
+#inscriptionForm{
+  background-color: #1aa3d4;
+}
+
+.conteneur{
+  height: 50vh;
+  position: relative;
+
+}

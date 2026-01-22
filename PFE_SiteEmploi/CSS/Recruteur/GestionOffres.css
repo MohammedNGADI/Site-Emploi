@@ -1,0 +1,426 @@
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+                
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
+                                                
+}
+
+    
+body {
+    position: relative;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    z-index: 10;
+}
+
+.milieu{
+    position: relative;
+    top: 80px;   
+    height: max-content;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.milieu .mlAdd{
+    display: none;
+}
+
+.milieu .mlCandidat{
+    display: none;
+}
+.milieu .mloffres{
+    display: none;
+}
+
+
+
+.haut{
+    background-color: #eee;
+    width: 100%;
+    height : 50px ;
+    position: relative;
+    top: 80px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.haut p{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hover-bg {
+    background-color: #448cb54d;
+}
+
+
+
+.milieu .mlAdd {
+    height: 700px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 7px;
+    background-color: #448cb54d;
+    display: none;
+    box-shadow: 0 0 30px rgba(10, 72, 111, 0.253);
+    position: absolute;
+    top: 20px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.milieu .mlAdd .AddForm{
+    margin-top: -100px;
+   
+}
+
+.milieu .mlAdd .AddForm label{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.milieu .mlAdd .AddForm .txtar{
+    font-size: 20px;
+    margin-top: 0;
+    position: relative;
+    top: -55px;
+}
+
+.milieu .mlAdd .AddForm input{
+    font-size: 20px;
+    margin-top: 20px;
+    height: 40px;
+    margin-left: 20px;
+    width: 550px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+.milieu .mlAdd .AddForm textarea{
+    font-size: 20px;
+    margin-top: 20px;
+    height: 200px;
+    width: 550px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    outline: none;
+    border: none;
+
+}
+.milieu .mlAdd .AddForm .btnvld{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-left: 790px;
+    border-radius: 10px;
+    background-color: rgb(2, 184, 36);
+    cursor: pointer;
+    color: #eee;
+    border:  none;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.milieu .mlAdd .AddForm .btnAnnul{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-left: -120px;
+    border-radius: 10px;
+    background-color: rgb(220, 18, 14);
+    cursor: pointer;
+    color: #eee;
+    border:  none;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.milieu .mlAdd .AddForm .btnvld:hover{
+    background-color: rgb(1, 138, 1);
+}
+.milieu .mlAdd .AddForm .btnAnnul:hover{
+    background-color: rgb(167, 10, 8);
+}
+
+
+
+.milieu .mloffres {
+    margin-top: 40px;
+    min-height: 800px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 25px;
+    display: none;
+}
+
+.milieu .mloffres .offre {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.offre .titre {
+    background-color: white;
+    height: 70px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    
+}
+
+.offre .titre p {
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+.offre .titre form {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 31px;
+    right: -60px;
+}
+.offre .titre p i {
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.offre .contenue {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.contenue .card{
+    height: auto;
+    background-color: #98c6e161;
+    padding: 20px;
+    border-radius: 10px;
+    
+
+}
+.contenue .card .card-head{
+    display: flex;
+    justify-content: space-between;
+}
+.contenue .card .typeC,.date{
+    font-size: 20px;
+    color: rgb(23, 87, 128);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.typeC{
+    margin-top: 10px;
+}
+.contenue .card .card-body {
+    padding-top: 10px;
+}
+
+.contenue .card .card-body p{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #e4e4e4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.contenue .card .card-body .card-text{
+    padding: 20px 20px 0 20px;
+    font-size: 20px;
+    color: #000;
+}
+.contenue .card .card-body .card-competence{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000;
+    padding: 10px 20px 0 20px;
+
+}
+
+
+.offre .titre .bx-chevron-down {
+    transition: transform 0.3s ease; 
+}
+
+.offre .titre .bx-chevron-down.rotate {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+.offre .titre .bxs-edit{
+    position: absolute;
+    right : 150px ;
+    font-size: 25px;
+    color: green;
+    display: none;
+}
+.offre .titre .bxs-edit:hover{
+    color: rgb(1, 57, 1);
+}
+.offre .titre  .bxs-trash{
+    position: absolute;
+    right : 200px ;
+    font-size: 25px;
+    color: red;
+    display: none;
+}
+.offre .titre .bxs-trash:hover{
+    color: rgb(127, 2, 2);
+}
+
+.candidat{
+    width: max-content; 
+    float: right;
+    margin-top: 0px;
+}
+
+.candidat a {
+    
+    color: #448cb5;
+}
+
+.candidat a:hover{
+    text-decoration: 0;
+    color: black;
+}
+.milieu .mlCandidat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+    padding: 20px;
+}
+
+.candidatcard {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+    height: max-content;
+}
+
+.candidatcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.photoProfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.donneesPersonels p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.NomEtPrenom {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.donneesContact {
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.lienVersProfil a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.lienVersProfil a:hover {
+    background-color: #0056b3;
+}
+footer{
+    margin-top: 200px;
+}
+
+.notification {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c3f5bc;
+    border: 1px solid #15d22e;
+    color: green;
+    border-radius: 5px;
+    max-width: max-content;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    display: none;
+}
+
+.notification p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

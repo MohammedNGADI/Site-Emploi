@@ -1,0 +1,90 @@
+.tousElementMessage{
+    text-align: center;
+    max-height: max-content;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    border: 1px solid rgb(172, 221, 237);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    top: 100px;
+    background-color: rgb(228, 248, 250);
+   
+}
+.Object{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.informationExpediteur{
+    text-align: left;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.nomComplet{
+    display: flex;
+}
+.iconAvecLettre{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(249, 137, 72);
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 28px;
+    margin-left: 10px;
+}
+.nomComplet_Email{
+    margin-left: 5px;
+    margin-top: 8px;
+}
+.nomPrenom{
+    font-weight: bold;
+}
+.email{
+    color: gray;
+}
+.dateEnvoyeMessage{
+    position: relative;
+    left: 50%;
+}
+
+.leMessageComplet p{
+    height: max-content;
+    white-space: pre-wrap;
+    text-align: left;
+    margin: 40px;
+}
+.deuxButton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    font-weight: bold;
+}
+.deuxButton .buttonRependre a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 21px;
+    border: solid 1px gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+.deuxButton .buttonRependre a:hover{
+    background-color: rgb(230, 228, 228);
+}
+.buttonSupprimer button{
+    padding: 12px;
+    border-radius: 21px;
+    border: solid 1px gray;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    font-family: 'Courier New', Courier, monospace;
+}
+.buttonSupprimer button:hover{
+    background-color: rgb(230, 228, 228);
+}

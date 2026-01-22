@@ -1,0 +1,19 @@
+
+  /* Barre de navigation verticale à droite */
+  
+  .content {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 94%;
+  justify-content: center;
+  }
+  .offre , .message {
+      display: none; 
+      position: absolute;
+      left : 0;
+  }
+
+ 
+
+

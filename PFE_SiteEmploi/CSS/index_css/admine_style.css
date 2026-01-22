@@ -1,0 +1,255 @@
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+
+*{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+body {
+      
+    background-color: rgb(255, 248, 240);
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Barre de navigation verticale à droite */
+  .vertical-navbar {
+    width: 30%;
+    height: 100vh;
+    background-color: #eee;
+    color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Une valeur supérieure pour que la barre soit au-dessus de la barre supérieure */
+    overflow-y: auto;
+    padding-top: 70px; /* Assure que le contenu ne soit pas obscurci par la barre supérieure */
+    font-family: 'Andale Mono', monospace;
+    
+  }
+
+  .vertical-navbar a {
+   
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    margin-left: 10px;
+    
+  }
+
+
+  /* Barre de navigation supérieure */
+  .top-navbar {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1002; /* Une valeur supérieure à la barre verticale pour rester au-dessus */
+    align-items: center;
+  }
+
+  .top-navbar a {
+    color: #5e5e5e;
+    text-decoration: none;
+  }
+  .top-navbar a:hover {
+      color: #000000;
+  }
+
+
+  .content {
+  position: absolute;
+  top: 70px;
+  right:0;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  
+  }
+  .message {
+      position: absolute;
+      left : 0;
+     
+  }
+
+  
+  .admine{
+      margin: 10px;
+      font-family: 'Andale Mono', monospace;
+  }
+  .offre , .message {
+      visibility: hidden; 
+      position: absolute;
+      left : 0;
+  
+  }
+  hr
+  {
+      margin: 0 auto; 
+      border-color: #5e5e5e;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .profile
+  {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+  }
+  
+  .icone{
+      display: flex;
+      align-items: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 25px;
+  }
+  .icone:hover{
+      cursor: pointer;
+      background-color: white;
+      transition: background-color 0.3s;
+  }
+  
+
+
+
+
+/*css pour les membres*/
+.cadre{
+  display: flex;
+  
+  align-items: center;
+  
+ }
+ .imge_profile{
+  width: 100px;
+  height: 100px;
+ }
+ .imge_profile img{
+  width: 100%;
+  height: 100%;
+ }
+ .row{
+  margin-top: 10px;
+  display: block;
+  border: solid black;
+  box-shadow: 0 4px 6px black;
+  border-radius: 10px;
+  width: 90%;
+  background-color: hsl(0, 0%, 83%);
+  height: max-content;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+ }
+ .lien-profile{
+  position: absolute;
+  right:100px;
+ }
+ .barsearch{
+  display: flex;
+
+}
+
+.recherchebar{
+  background-color: rgba(0, 0, 0, 0.574) ;
+  height: 30px;
+  width: 200px;
+  border: solid #eee 2px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000000;
+  font-size: 15px;
+}
+
+.recherchebar::placeholder{
+  color:  #eee;
+}
+
+.recherchebtn{
+  background-color: #1aa3d4;
+  border: solid #eee 2px;
+  width: 30px;
+  height: 30px;
+  margin-left: 0;
+  border-radius: 10px;
+
+}
+.recherchebtn i {
+  color: white;
+  font-size: 30px;
+  width: 20px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recherchebtn i:hover {
+  color: #1aa3d4;
+}
+
+.recherchebtn:hover{
+  background-color: #ffffff;
+
+}
+.nav_bar_admine {
+display: flex;
+align-items: center;
+margin-top: 10px;
+border: #1aa3d4 solid; 
+width: 100%;
+border-radius: 10px;
+background-color: white;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Ajout de valeurs pour l'ombre */
+}
+
+.nav_bar_button button{
+height: 40px;
+width: auto;
+align-items: center;
+}
+.nav_bar_button{
+margin-left: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.bare_recherche{
+position: absolute;
+right: 20px;
+}
+.les_membres{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+border: aqua solid;
+border-radius: 10px;
+height: max-content;
+padding-bottom: 20px;
+background-color: white;
+}
+.membre{
+width: 100%;
+margin-left: 20px;
+margin-right: 20px;
+}
+.info{
+margin-left: 10px;
+}
+.tirtre{
+align-self: start;
+margin-left: 40px;
+}
+.last_visit{
+position: relative;
+left: 270px;
+bottom: 70px;
+display: flex;
+align-items: center;
+}
+.last_visit div{
+margin-right:10px ;
+}

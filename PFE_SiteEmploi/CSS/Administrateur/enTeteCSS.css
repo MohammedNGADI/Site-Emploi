@@ -1,0 +1,102 @@
+/* En Tete de la page administrateur */
+
+.enTete{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    overflow: auto;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    z-index: 1001;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.imageProfile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: black solid;
+}
+.logoSite img{
+    width: 60px;
+    height: auto;
+}
+.profile .nomAdministrateur{
+    font-size: 15px;
+    margin-left: 5px;
+}
+/* formulaire Deconexion de la page administrateur */
+.formulaireDeconexion{
+    display: none;
+    position: fixed;
+    text-align: center;
+    top: 70px;
+    right: 30px;
+    padding: 0 20px 20px 20px;
+    background: rgb(193, 193, 193);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s;
+    z-index: 999;
+}
+.imageProfileDecon{
+    margin-top: 20px;
+}
+.imageProfileDecon img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.nomAdministrateur{
+    font-weight: 400;
+    font-size: 25px;
+}
+.formulaireDeconexion .nomAdministrateur{
+    margin-top: 15px;
+}
+.lienGererProfile{  
+    position: relative;
+    background: none;
+    border-radius: 100px;
+    border: 1px solid #747775;
+    display: inline-block;
+    outline: 0;
+    padding: 9px 23px 9px 23px;
+    text-align: center;
+}
+.lienGererProfile:hover{
+    background: rgba(163, 192, 202, 0.75);
+    cursor: pointer;
+
+}
+.lienGererProfile a{
+    text-decoration: none;
+}
+.lienDeconnexion{
+    margin-top: 10px;
+}
+.lienDeconnexion a{
+    font-size: large;
+    text-decoration: none;
+    color: #606361;
+}
+.lienDeconnexion a:hover{
+    color: black;
+}
+.iconX{
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.iconX:hover{
+    background: rgba(214, 211, 211, 0.847);
+}

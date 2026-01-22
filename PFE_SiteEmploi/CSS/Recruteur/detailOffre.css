@@ -1,0 +1,340 @@
+@import './enTeteCSS.css';
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+
+*{
+    font-family: 'Readex Pro', sans-serif;
+    
+}
+
+
+body{
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.milieu{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.Entreprise,.Annance{
+    background-color: #fff;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 2px 2px 2px  rgba(0, 0, 0,0.1);
+}
+.entrepriseNom,.AnnanceDetail{
+    font-size: 30px;
+    padding: 15px;
+    border-bottom: solid 3px rgba(0, 0, 0,0.1);
+}
+.logoEntreprise{
+    float: right;
+    cursor: pointer;
+}
+.InfosAnnance,.InfosEntreprise{
+    padding-left: 20px;
+}
+.Poste{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.informationsA,.InfosEntreprise{
+    padding-left: 20px;
+    width: 90%;
+    font-size: 15px;
+}
+.competences,.typeContrat,.ville,.NiveauExperience,.NiveauEtude,.langues{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+footer{
+    position: relative;
+    margin-top: 300px;
+    width: 100%;
+
+}
+
+/* Styles pour le candidat */
+
+.Postulation{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+.Postulation .btnPostulation{
+    background-color: #4097bd;
+    color: black;
+    height: 100px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+
+.Postulation .btnPostulation:hover{
+    background-color: #7cacc0;
+}
+.SupprimerPostulation{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+.SupprimerPostulation button{
+    background-color: #ba2b2b;
+    color: black;
+    height: 100px;
+    width: max-content;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.SupprimerPostulation button:hover{
+    background-color: #c07c7c;
+}
+/* Suppresion Postulation */
+
+.ConfirmationEtMessageSupp{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(7px);
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+.ConfirmerSuppressionPostulation{
+    background-color: #ffffffdc;
+    height: 200px;
+    width: max-content;
+    border-radius: 30px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    padding-top: 40px;
+}
+.ConfirmationEtMessageSupp .ConfirmerSuppressionPostulation p{
+    margin-left: 100px;
+
+}
+.ConfirmationEtMessageSupp .ConfirmerSuppressionPostulation button{
+    margin-top: 70px;
+    height: 40px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.ConfirmationEtMessageSupp .ConfirmerSuppressionPostulation .OuiS{
+    margin-right: 30px;
+    background-color: #1c9d58;
+}.ConfirmationEtMessageSupp .ConfirmerSuppressionPostulation .OuiS:hover{
+    background-color: #2fd07a;
+}
+.ConfirmationEtMessageSupp .ConfirmerSuppressionPostulation .NonS{
+    margin-right: 40px;
+    background-color: #df3030;
+}.ConfirmationEtMessageSupp .ConfirmerSuppressionPostulation .NonS:hover{
+    background-color: #e96565;
+}
+
+/* Postulation  */
+
+.ConfirmationEtMessage{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(7px);
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+.ConfirmationEtMessage .ConfirmerPostulation{
+    background-color: #ffffffdc;
+    height: 200px;
+    width: max-content;
+    border-radius: 30px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    padding-top: 40px;
+    
+}
+.ConfirmationEtMessage .ConfirmerPostulation p{
+    margin-left: 100px;
+
+}
+
+.ConfirmationEtMessage .ConfirmerPostulation button{
+    margin-top: 70px;
+    height: 40px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.ConfirmationEtMessage .ConfirmerPostulation .Oui{
+    margin-right: 30px;
+    background-color: #1c9d58;
+}.ConfirmationEtMessage .ConfirmerPostulation .Oui:hover{
+    background-color: #2fd07a;
+}
+
+.ConfirmationEtMessage .ConfirmerPostulation .Non{
+    margin-right: 40px;
+    background-color: #df3030;
+}.ConfirmationEtMessage .ConfirmerPostulation .Non:hover{
+    background-color: #e96565;
+}
+
+.MessagePostulation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-size: 16px;
+    transition: opacity 0.5s ease; 
+    opacity: 0; 
+}
+
+.MessagePostulation::after {
+    content: "\2714"; 
+    font-size: 24px;
+    color: #fff;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.MessagePostulation.hidden {
+    opacity: 1; 
+}
+
+.MessageDejaPostulation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFD700; /* Jaune doré */
+    color: #000; /* Couleur du texte noire pour une meilleure visibilité */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-size: 16px;
+    transition: opacity 0.5s ease; 
+    opacity: 0; 
+} 
+
+.MessageDejaPostulation::before {
+    content: "\26A0";
+    font-size: 24px;
+    color: #000; 
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.MessageDejaPostulation.hidden {
+    opacity: 1; 
+}
+
+.MessageSuppression {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-size: 16px;
+    transition: opacity 0.5s ease; 
+    opacity: 0; 
+}
+
+.MessageSuppression::after {
+    content: "\2714"; 
+    font-size: 24px;
+    color: #fff;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.MessageSuppression.hidden {
+    opacity: 1; 
+}
+
+.MessageDejaSupprimee {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFD700; /* Jaune doré */
+    color: #000; /* Couleur du texte noire pour une meilleure visibilité */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    font-size: 16px;
+    transition: opacity 0.5s ease; 
+    opacity: 0; 
+} 
+
+.MessageDejaSupprimee::before {
+    content: "\26A0";
+    font-size: 24px;
+    color: #000; 
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.MessageDejaSupprimee.hidden {
+    opacity: 1; 
+}
+
+

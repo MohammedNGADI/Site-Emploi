@@ -1,0 +1,94 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header{
+    position: fixed;
+    top: 0;
+}
+
+.conteuneur {
+    margin-top: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+    min-height: 100vh;
+    height: max-content;
+}
+
+.candidatcard {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    width: calc(100% - 20px); 
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    height: max-content;
+    flex: 1 1 50%; 
+}
+
+.candidatcard:nth-child(2n) {
+    margin-right: 0; 
+}
+
+.candidatcard:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.photoProfil {
+    float: left;
+    margin-right: 20px;
+}
+
+.photoProfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.donneesPersonels {
+    float: left;
+    width: calc(70% - 120px);
+}
+
+.donneesContact {
+    clear: both;
+}
+
+.NomEtPrenom p {
+    margin: 5px 0;
+}
+
+.lienVersProfil {
+    margin-top: 10px;
+}
+
+.lienVersProfil a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.lienVersProfil a:hover {
+    color: #0056b3;
+}
+
+.CandidatsPostules{
+    margin-top: 70px;
+    height: 100vh;
+    display: flex; /* Utiliser Flexbox */
+    flex-wrap: wrap; 
+    padding: 30px;
+}

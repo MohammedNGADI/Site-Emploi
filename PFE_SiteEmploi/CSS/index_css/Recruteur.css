@@ -1,0 +1,268 @@
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
+                                                
+}
+
+    
+section {
+    margin-top: 50px;
+}
+body {
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.menu {
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+
+.Nom_Entreprise {
+    width: 75px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.Nom_Entreprise span {
+    color: black;
+}
+.menu li {
+   margin: 0 15px;
+   margin-top: 0;
+   list-style: none;
+}
+.menu li a {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: 0;
+    color: black;
+    position: relative;
+}
+.menu li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color:  #273e60;
+    transition: 0.5s;
+}
+.menu li a:hover::before {
+    width: 100%;
+}
+.menu li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #273e60;
+    transition: 0.5s;
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.menu li a:hover {
+    color: #000;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.05);
+    padding: 50px 10px;
+}
+#home {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+}
+#home .left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#home .left h4 {
+    font-size: 25px;
+    color:  #273e60;
+}
+#home .left h1 {
+    font-size: 50px;
+}
+#home .left p {
+    font-size: 12px;
+    color: #999;
+}
+#home .left button {
+     margin-top: 20px;
+     width: fit-content;
+     font-size: 25px;
+     padding: 5px 10px;
+     background-color: #000;
+     border: 0;
+     transition: 0.5s;
+     position: relative;
+     cursor: pointer;
+}
+#home .left button  a {
+    text-decoration: 0;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+#home .left button::before {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #273e60;
+}
+#home .left button:hover a{
+   letter-spacing: 1px;
+}
+
+#home .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .right img {
+    width: 100%;
+    animation: animate 2s linear;
+    transition: 0.5s;
+}
+
+/* animation image */
+
+@keyframes animate {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
+footer {
+    background-color: rgba(0,0,0,0.05);
+}
+footer .services_list {
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service img {
+    width: 40px;
+    background-color: #273e60;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px auto;
+}
+.service  p {
+    color: #333;
+}
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 2px;
+    width: 100%;
+}
+.footer_text {
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 0;
+}
+.footer_text span {
+    color: #273e60;
+}
+.toggle_menu {
+    display: none;
+}
+
+
+
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.left {
+    flex: 1;
+    text-align: left;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+.circular-image {
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}

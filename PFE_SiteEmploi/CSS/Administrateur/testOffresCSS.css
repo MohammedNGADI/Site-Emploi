@@ -1,0 +1,264 @@
+body{
+    width: 100%;
+    height: 95vh;
+    margin: auto;
+    background: rgb(193, 216, 223);
+}
+.lesDeuxPages{
+    position: relative;
+    top: 8%;
+    margin-top: 2%;
+    width: 90%;
+    height: 88%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    display: flex !important;
+    margin-bottom: 60px;
+}
+.offres{
+    width: 40%;
+    height: 95%;
+    margin-bottom: 10%;
+    overflow-y: auto;
+}
+.offreAffiche{
+    width: 60%;
+    height: 98%;
+    overflow-y: auto;
+    padding: 1%;
+    border-left: 1px solid rgba(0, 0, 0, 0.317);
+}
+.idOffre{
+    display: none;
+}
+.poste{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(37, 162, 245);
+}
+.ville{
+    color: rgb(169, 169, 169);
+}
+.dateFinOffre{
+    margin-top: 8px;
+    font-size: 12px;
+}
+.poste, .ville, .dateFinOffre{
+    margin-left: 15px;
+}
+.nombreOffre{
+    margin-left: 10px;
+}
+
+/* la carde d'offre */
+span.acunResultat {
+    color: gray;
+    font-size: 15px;
+}
+
+.uneOffre{
+    width: 96%;
+    margin-bottom: 10px;
+    height: max-content;
+    padding: 2%;
+    border-bottom: 1px solid gray;
+    
+}
+.uneOffre:hover {
+    background: rgb(163, 201, 233);
+    cursor: pointer;
+    
+}
+.profileOffre{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.profileOffre .supprimerOffre{
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+}
+.supprimerOffre button{
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.imageProfileOffre img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: black solid;
+}
+.profileOffre .nomAdministrateurOffre{
+    font-size: 17px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+
+/*menue deroulant */
+
+.menuDeroulant{
+    margin-top: 10px;
+    position: fixed;
+    display: flex;
+    right: 200px;
+    top: 0;
+    z-index: 2000;
+}
+.optionSelectionnee {
+    border: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.optionSelectionnee:focus {
+    outline: none;
+    background: none;
+}
+
+.divOptionSelectionneeOffre svg {
+    cursor: pointer;
+}
+
+.divOptionSelectionneeOffre {
+    width: max-content;
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex; /* Ajout de la propriété display: flex; pour aligner les éléments horizontalement */
+    margin-left: 20px;
+}
+.options li {
+    padding: 10px;
+    cursor: pointer;
+}
+.options li:hover {
+    background-color: #f0f0f0; /* Couleur de fond lors du survol de l'option */
+}
+
+.options {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 210px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.divOptions{
+    position: relative;
+    right: 200px;
+    top: 30px;
+    z-index: 1000;
+}
+.offreBareDeRecherche{
+    display: flex;
+    align-items: center;
+  }
+  .offreBareDeRechercheForm{
+    display: flex;
+  }
+  div.bareDeRechercheOffre{
+    display: flex;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 12px;
+    
+  }
+  .inputRecherche{
+    border: none;
+      
+  }
+  .inputRecherche:focus{
+    outline: none;
+    background: transparent;
+  }
+  .buttonRecherche{
+    border: none;
+    border-radius: 50%;
+    color:#1aa3d4;
+    background: transparent;
+  }
+  .buttonRecherche:focus{
+    outline: none;
+  }
+
+
+  /*Affiche une offre : */
+
+  #villeEtDatePublication{
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #dateDeFin{
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #titreOffre{
+    text-align: center;
+  }
+  h5{
+    margin-left: 20px;
+  }
+  #description , #competences, #experiences{
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+
+  #salaire , #contrat{
+    margin-left: 20px;
+  }
+.suivantPrecedant{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+.suivantPrecedant  a{
+    color : black;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.suivantPrecedant div{
+    background: #00caff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.suivantPrecedant div:last-child{
+    margin-right: 0;
+}
+.none{
+    background: none !important;
+}

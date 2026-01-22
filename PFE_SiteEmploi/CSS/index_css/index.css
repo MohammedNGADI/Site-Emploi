@@ -1,0 +1,552 @@
+@import url('https://fonts.cdnfonts.com/css/readex-pro');
+
+*{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: 0;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+body {
+    background-color: rgba(255 255 255 /0.9);
+}
+section {
+    margin-top: 100px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+
+header  .logo a {
+    font-size: 25px;
+    color: #29d9d5;
+   
+ 
+}
+header  .logo a span {
+    color: #fff;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+}
+.menu li  {
+    margin: 0 15px;
+    list-style-type: none;
+}
+.menu li a {
+    color: black;
+    font-size: 14px;
+}
+.btn-connexion {
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+    position: absolute;
+    right: 40px; /* Déplace le bouton de 40 pixels vers la gauche */
+}
+
+.btn-connexion:hover {
+    background-color: #141515;
+    color: #fff;
+ 
+}
+
+/*******************/
+
+.menu {
+    display: flex;
+}
+.logo {
+    color: #273e60;
+    font-weight: 25;
+    font-size: 2px;
+    margin-left: 0;
+    width: 70px;
+}
+
+
+
+
+.logo-image {
+    width: 30px;
+    height: auto;
+    padding: -30px 20px;
+    position: absolute;
+    left: 5px;
+    top: 13px; 
+}
+
+
+
+
+
+
+.menu li {
+   margin: 0 15px;
+   list-style: none;
+}
+.menu li a {
+    font-size: 14px;
+    text-decoration: 0;
+    color: black;
+    position: relative;
+}
+.menu li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color:  #273e60;
+    transition: 0.5s;   
+}
+.menu li a:hover::before {
+    width: 100%;
+}
+.menu li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: black;
+    transition: 0.5s;
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.menu li a:hover {
+    color: #0000005d;
+}
+
+/*Formulaire  */
+.barsearch{
+    display: flex;
+}
+
+.recherchebar{
+    background-color: rgba(255, 255, 255, 0.226) ;
+    height: 60px;
+    width: 440px;
+    border: solid #eee 2px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #eee;
+    font-size: 15px;
+}
+
+.recherchebar::placeholder{
+    color:  #eee;
+}
+
+.recherchebtn{
+    background-color: #1aa3d4;
+    border: solid #eee 2px;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+.recherchebtn i {
+    color: white;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recherchebtn i:hover {
+    color: black;
+}   
+
+.recherchebtn:hover{
+    background-color: #ffffff;
+
+}
+
+
+
+
+#home {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 70px;
+}
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+    color: white;
+    
+}
+#home h4 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#home p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+/*les offres CSS*/
+
+.titre{
+    display: flex;
+    align-items: center;
+    height: calc(30vh - 50px);
+    flex-direction: column;
+    padding: 50px 10%;
+    width: 100%;
+}
+#offres-disponible{
+    padding: 0 10% ;
+    margin-bottom: 50px;
+}
+#offres-disponible .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 32px;
+}
+#offres-disponible .content .offre {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+}
+#offres-disponible .content .offre img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.offre .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+.offre .content  h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.offre .content p {
+    padding: 2px;
+    font-size: 12px;
+}
+.offre .content p:nth-child(3){
+    margin-bottom: 25px;
+}
+.offre .content a {
+    margin-top: 60px;
+    padding: 10px 60px;
+    border: 2px solid #29d9d5;
+    color: #29d9d5;
+    font-weight: bold;
+}
+.offre:hover {
+    box-shadow: 0 0 10px #29d9d5;
+}
+.offre:hover .content {
+    transform: translateX(0);
+}
+
+/* about us CSS */
+
+#about_us {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 50px);
+    flex-direction: column;
+    padding: 50px 10%;
+    width: 100%;
+}
+.about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 70vh;
+}
+.about .left {
+     width: 40%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+}
+.about .left img {
+    width: 90%;
+}
+.about .right {
+    width: 60%;
+}
+.about .right h3 {
+    font-size:35px;
+    color: #273e60;
+    margin: 10px 0;
+}
+.about .right p {
+    font-size: 14px ;
+    color: #999;
+}
+.about .right button {
+    margin: 20px 0;
+    padding: 5px 60px;
+    background-color: #273e60;
+    border: 0;
+}
+.about .right button a{
+    color: #fff;
+    text-decoration: 0;
+    font-weight: bolder;
+}
+/*********************/
+
+
+
+
+/**
+ * Footer
+ */
+
+.footer-wrapper{
+    background-color: #141515;
+}
+ .main-footer {
+    background: #26262A;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main-footer a {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+.main-footer a:hover {
+    color: #2991A2;
+}
+
+h5.footer-title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 0 0 25px;
+    color: #FFF;
+    position: relative;
+}
+
+.footer-about-us {
+    margin-right: 40px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-about-us a {
+    border: 2px solid #33B6CB;
+    color: #33B6CB;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 4px 12px;
+    
+    border-radius: 3px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.footer-about-us a:hover {
+    border-color: #2991A2;
+}
+
+ul.footer-menu li {
+    width: 50%;
+    float: left;
+    margin-bottom: 12px;
+}
+
+.footer-newsletter {
+    margin-top: 23px
+}
+
+.footer-newsletter .form-group {
+    position: relative;
+}
+
+.footer-newsletter .form-control {
+    background: none;
+    height: 44px;
+    border-radius: 22px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    padding-left: 20px;
+    padding-right: 100px;
+    color: #FFF;
+}
+
+.footer-newsletter .form-control:focus {
+    border-color: #FFF;
+}
+
+.footer-newsletter .btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 22px;
+    line-height: 16px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+}
+
+.bottom-footer {
+    background: rgb(19 52 221);
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 22px;
+    font-size: 13px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.bottom-footer a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bottom-footer a:hover {
+    color: #2991A2;
+}
+
+ul.bottom-footer-menu {
+    text-align: center;
+}
+
+ul.bottom-footer-menu li {
+    
+    position: relative;
+    font-size: 12px;
+}
+
+ul.bottom-footer-menu li + li {
+    margin-left: 30px;
+}
+
+ul.bottom-footer-menu li:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    width: 4px;
+    height: 4px;
+    background: #33B6CB;
+    border-radius: 50%;
+}
+
+
+ul.bottom-footer-menu.for-social {
+    float: right;
+}
+
+ul.bottom-footer-menu.for-social li + li {
+    margin-left: 20px;
+}
+
+ul.bottom-footer-menu.for-social li a {
+    font-size: 16px;
+}
+
+ul.bottom-footer-menu.for-social li:after {
+    display: none;
+}
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+    ul.bottom-footer-menu {
+        text-align: left;
+        margin: 10px 0;
+    }
+    ul.bottom-footer-menu.for-social {
+        float: left;
+        margin: 0;
+    }
+}
+
+@media (max-width: 479px) {}
+.offres-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: transparent; 
+}
+
+.offres-table th, .offres-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.offres-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+
+
